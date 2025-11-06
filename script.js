@@ -13,8 +13,11 @@ function addNum(){
 }
 
 function subNum(){
-    count--;
+    if (count!=0) {
+        count--;
     input.value = count;
+    }
+    
 }
 
 addBtn.addEventListener("click",addNum)
